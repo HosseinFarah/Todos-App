@@ -1,17 +1,7 @@
 import { NavLink } from "react-router-dom";
 import logo from '../assets/navbar/img/todo.png'
-import Modal from "./Modal/Modal";
-import { useState } from "react";
-import Login from "./Login/Login";
 export const Navbar = () => {
-  const [showModal,setShowModal] = useState(false);
-  const modalHandeler = ()=>{
-    setShowModal(true);
-  }
 
-  const hideLoginHandler = ()=>{
-    setShowModal(false);
-  }
 
   return (
     <>      
@@ -51,12 +41,7 @@ export const Navbar = () => {
     <img src={logo} alt="Todo_Logo" className="rounded float-end" style={{height:"50px"}} />
     </header>
    
-   <Modal
-    show={showModal}
-    hideLoginHandler = {hideLoginHandler}
-    >
-    <Login/>
-    </Modal>
+
   
     </>
     
