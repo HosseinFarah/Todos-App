@@ -1,0 +1,31 @@
+.alert {
+  color: crimson;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  animation: alert 1.5s ease-in infinite;
+  transition: all 1s ease-in-out;
+}
+@keyframes alert {
+  0%{
+    background-color: #ffae00;
+    font-size: 18px;
+  }
+  25%{
+    background-color: #003771;
+    font-size: 25px;
+  }
+  50%{
+    background-color: #ffffff;
+    font-size: 35px;
+  }
+  75%{
+    background-color: #fff203;
+    font-size:21px;
+  }
+ 100%{
+    background-color: #b8b8b8;
+    font-size: 14px;
+  }
+}
